@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="悦成小阁民宿（潮州古城牌坊街店）：住进潮州古城旁的一栋小白楼。白天走进牌坊街烟火，夜里回到安静、干净、好休息的小阁。"
+    />
+    <title>悦成小阁民宿 · 潮州古城牌坊街店</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--
+      Huashu-Design pass:
+      Assumption: v2/index.html is the copy source. This redesign keeps real photos, removes the previous card-grid language,
+      and rebuilds the page as an editorial inn brochure with interactive room scenes.
+    -->
+    <header class="site-header" aria-label="主导航">
+      <a class="brand-mark" href="#top" aria-label="返回悦成小阁首页">
+        <span class="brand-seal">悦</span>
+        <span>
+          <strong>悦成小阁</strong>
+          <small>Chaozhou Old City</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="页面章节">
+        <a href="#stay">小阁</a>
+        <a href="#rooms">房间</a>
+        <a href="#routes">古城</a>
+        <a href="#contact">联系</a>
+        <a href="#guide">入住</a>
+      </nav>
+      <a class="header-steward" href="tel:15219862921" aria-label="联系管家 15219862921">
+        <img src="./assets/icons/phone.svg" alt="" aria-hidden="true" />
+        <span>管家 15219862921</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav-overlay" aria-hidden="true">
+      <a href="#stay">小阁</a>
+      <a href="#rooms">房间</a>
+      <a href="#routes">古城</a>
+      <a href="#contact">联系</a>
+      <a href="#guide">入住</a>
+      <a href="tel:15219862921">管家 15219862921</a>
+    </div>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="./assets/photos/rooms/facade-front-new.png"
+          alt="悦成小阁民宿真实外立面，白墙、黑色门头与竖向招牌"
+        />
+        <div class="hero-copy">
+          <p class="eyebrow">潮州古城 · 牌坊街旁</p>
+          <h1 id="hero-title">
+            <span>悦成</span>
+            <span>小阁</span>
+          </h1>
+          <p class="hero-lead">
+            住进潮州古城旁的一栋小白楼。白天走进牌坊街烟火，夜里回到安静、干净、好休息的小阁。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button primary" href="#contact">联系管家</a>
+            <a class="button secondary" href="#rooms">查看房间</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="核心卖点">
+          <span>Paifang Street</span>
+          <strong>古城牌坊街店</strong>
+          <p>门口有竖向招牌，白墙黑门头，街上望一眼就能认出来。</p>
+        </aside>
+        <figure class="hero-portal">
+          <img
+            src="./assets/photos/rooms/facade-close-new.png"
+            alt="悦成小阁门口招牌、白墙和黑门头近景实拍"
+          />
+        </figure>
+      </section>
+
+      <section class="intro-band reveal">
+        <p class="section-kicker">A SMALL HOUSE BESIDE PAIFANG STREET</p>
+        <h2>
+          在潮州，住得近很重要，住得舒服更重要。古城的热闹在门外，整洁、柔光、好眠和管家照应，留给夜晚回来后的你。
+        </h2>
+      </section>
+
+      <section class="section house-story reveal" id="stay">
+        <div class="house-copy">
+          <p class="eyebrow">THE HOUSE</p>
+          <h2>
+            <span>白墙黑门头，</span>
+            <span>小楼不张扬，</span>
+            <span>但很好认。</span>
+          </h2>
+          <p>
+            从古城逛回来不用绕路，进小楼就能把一天的累放下。
+          </p>
+        </div>
+        <div class="house-photos">
+          <figure class="house-photo-large">
+            <img
+              src="./assets/photos/rooms/facade-beautified-close.png"
+              alt="悦成小阁门头近景、竖向招牌、白墙和街巷实拍"
+            />
+            <figcaption>门口近景</figcaption>
+          </figure>
+          <figure class="house-photo-small">
+            <img
+              src="./assets/photos/rooms/facade-beautified-street.png"
+              alt="悦成小阁在街巷中的白色小楼、竖向招牌和门头实拍"
+            />
+            <figcaption>街巷视角</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section reason-section reveal" aria-labelledby="reason-title">
+        <div class="reason-title">
+          <p class="eyebrow">WHY STAY</p>
+          <h2 id="reason-title">适合想认真逛潮州，也想睡个好觉的人。</h2>
+        </div>
+        <div class="reason-list">
+          <article>
+            <span>01</span>
+            <h3>古城落脚处</h3>
+            <p>出门就是牌坊街，广济桥、开元寺都在步行范围内。省下打车等车的时间，多逛逛。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>安静好眠</h3>
+            <p>窗户一关，牌坊街的声音就远了。床品和灯光都调得柔和，逛了一天回来能睡个好觉。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>干净清爽</h3>
+            <p>房间不大，但亮堂、好打理。两个人住刚好，带小孩或朋友同行也够用。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section room-scene-section reveal" id="rooms">
+        <div class="room-scene-head">
+          <p class="eyebrow">ROOM DETAILS</p>
+          <h2>睡觉、坐下、洗漱、看电影，都在真实房间里看清楚。</h2>
+        </div>
+
+        <div class="room-carousel" data-room-carousel aria-label="房间主题轮播">
+          <div class="room-carousel-frame">
+            <article class="room-slide active" data-room-slide>
+              <figure>
+                <img src="./assets/photos/rooms/room-bed-platform-new.jpg" alt="悦成小阁木色卧室、大床、暖光灯带和小茶几" />
+              </figure>
+              <div class="room-slide-copy">
+                <span>01 / SLEEP</span>
+                <h3>床铺干净，灯光不刺眼。</h3>
+                <p>逛完古城回来，换上拖鞋，躺下就能休息。木色床台和暖光灯带把夜晚收得很安静。</p>
+              </div>
+            </article>
+
+            <article class="room-slide" data-room-slide>
+              <figure>
+                <img src="./assets/photos/rooms/room-lounge-new.jpg" alt="悦成小阁绿色沙发、单椅、小圆桌和书桌" />
+              </figure>
+              <div class="room-slide-copy">
+                <span>02 / LIVING</span>
+                <h3>坐下来，休息一会。</h3>
+                <p>绿色沙发、小圆桌、单椅和书桌都在同一个空间。两个人聊天、带小孩休息，或者临时处理点事情，都方便。</p>
+              </div>
+            </article>
+
+            <article class="room-slide" data-room-slide>
+              <figure>
+                <img src="./assets/photos/rooms/room-bath-new.jpg" alt="悦成小阁浴室洗漱台、马桶、镜柜和淋浴间" />
+              </figure>
+              <div class="room-slide-copy">
+                <span>03 / BATH</span>
+                <h3>洗漱和淋浴分得清楚。</h3>
+                <p>镜柜可以收纳随身洗漱品，台面顺手，淋浴区有玻璃门隔开。白天走了很多路，回来洗个热水澡会舒服很多。</p>
+              </div>
+            </article>
+
+            <article class="room-slide" data-room-slide>
+              <figure>
+                <img src="./assets/photos/rooms/room-projector-new.jpg" alt="悦成小阁房间投影、大床、吊灯和书桌" />
+              </figure>
+              <div class="room-slide-copy">
+                <span>04 / MOVIE</span>
+                <h3>夜里看一场电影。</h3>
+                <p>不想再出门，就把灯调暗，看一会儿投影。潮州的夜色在外面，房间里留给慢下来的时间。</p>
+              </div>
+            </article>
+
+            <article class="room-slide" data-room-slide>
+              <figure>
+                <img src="./assets/photos/rooms/room-tea-new.jpg" alt="悦成小阁藤编桌、吊灯、植物画和小茶桌" />
+              </figure>
+              <div class="room-slide-copy">
+                <span>05 / TEA</span>
+                <h3>泡茶、吃点东西、发会儿呆。</h3>
+                <p>小桌旁有柔和吊灯，适合坐下来喝茶。一天走了很多路，回房间后不用马上安排下一件事。</p>
+              </div>
+            </article>
+
+            <article class="room-slide" data-room-slide>
+              <figure>
+                <img src="./assets/photos/rooms/room-stair-amenities-new.jpg" alt="悦成小阁楼梯下的饮水、茶具、空气设备和卫浴入口" />
+              </figure>
+              <div class="room-slide-copy">
+                <span>06 / AMENITIES</span>
+                <h3>常用的小东西，放在顺手处。</h3>
+                <p>饮水、茶具、备品和楼梯动线集中在入门区域。住起来不需要到处翻找，日常使用更顺。</p>
+              </div>
+            </article>
+          </div>
+          <div class="room-carousel-controls" aria-label="房间轮播控制">
+            <button type="button" class="room-arrow" data-room-prev aria-label="上一张">‹</button>
+            <div class="room-dots" aria-label="选择房间主题"></div>
+            <button type="button" class="room-arrow" data-room-next aria-label="下一张">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section route-section reveal" id="routes">
+        <div class="route-copy">
+          <p class="eyebrow">OLD CITY ROUTES</p>
+          <h2>住得离古城近，行程就会轻很多。</h2>
+        </div>
+        <div class="route-line">
+          <article>
+            <img src="./assets/icons/home.svg" alt="" aria-hidden="true" />
+            <span>下午</span>
+            <h3>先到小阁放下行李</h3>
+            <p>把行李放好，换一双舒服的鞋，再轻装走进古城。</p>
+          </article>
+          <article>
+            <img src="./assets/icons/walk.svg" alt="" aria-hidden="true" />
+            <span>傍晚</span>
+            <h3>步行去牌坊街</h3>
+            <p>看骑楼、牌坊与老街，潮州的第一面，就该是街巷的样子。</p>
+          </article>
+          <article>
+            <img src="./assets/icons/bed.svg" alt="" aria-hidden="true" />
+            <span>夜里</span>
+            <h3>从灯火里退一步</h3>
+            <p>逛完广济桥或古城夜色，回到小白楼，洗漱后安心休息。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-section reveal" aria-labelledby="faq-title">
+        <div class="faq-copy">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">常见问题，住前就放心。</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>几点退房？</summary>
+            <p>一般为中午 12 点前。离开时请检查物品，关好门窗和空调。</p>
+          </details>
+          <details>
+            <summary>房卡放在哪里？</summary>
+            <p>退房时麻烦将房卡放在楼下小圆桌，并通知管家。</p>
+          </details>
+          <details>
+            <summary>停车怎么停？</summary>
+            <p>进入停车场后，直接停入右手边白色划线车位即可。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact-section reveal" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contact-title">想住潮州古城旁，先问问管家。</h2>
+          <p>房态、价格、入住人数、停车和到店时间，提前问清楚，到店不慌张。</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="tel:15219862921">
+            <img src="./assets/icons/phone.svg" alt="" aria-hidden="true" />
+            拨打管家
+          </a>
+          <button class="button secondary copy-button" type="button" data-copy="15219862921">
+            <img src="./assets/icons/copy.svg" alt="" aria-hidden="true" />
+            复制微信 / 电话
+          </button>
+          <a
+            class="button map-link"
+            href="https://uri.amap.com/search?keyword=%E6%82%A6%E6%88%90%E5%B0%8F%E9%98%81%E6%B0%91%E5%AE%BF%EF%BC%88%E6%BD%AE%E5%B7%9E%E5%8F%A4%E5%9F%8E%E7%89%8C%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="./assets/icons/route.svg" alt="" aria-hidden="true" />
+            打开地图搜索
+          </a>
+        </div>
+      </section>
+
+      <section class="section guide-section reveal" id="guide">
+        <div class="guide-head">
+          <p class="eyebrow">ARRIVAL GUIDE</p>
+          <h2>订好之后，到店照着做就行。</h2>
+          <p>
+            门锁、停车、取电和退房都整理成简单步骤。第一次来潮州，也可以顺利找到门、停好车、住得安心。
+          </p>
+        </div>
+
+        <div class="guide-shell">
+          <div class="guide-tabs" role="tablist" aria-label="入住指南">
+            <button class="tab active" type="button" role="tab" aria-selected="true" data-guide="door">
+              <img src="./assets/icons/lock.svg" alt="" aria-hidden="true" />
+              开门
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-guide="parking">
+              <img src="./assets/icons/parking.svg" alt="" aria-hidden="true" />
+              停车
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-guide="power">
+              <img src="./assets/icons/power.svg" alt="" aria-hidden="true" />
+              取电
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-guide="checkout">
+              <img src="./assets/icons/clock.svg" alt="" aria-hidden="true" />
+              退房
+            </button>
+          </div>
+
+          <div class="guide-panel active" data-panel="door">
+            <div class="guide-text">
+              <span class="step-label">01 / DOOR</span>
+              <h3>到门口后，可按门铃或刷房卡。</h3>
+              <ol>
+                <li>确认已到达悦成小阁门口。</li>
+                <li>按门锁下方门铃，或将房卡靠近读卡区。</li>
+                <li>如识别失败，直接联系管家处理。</li>
+              </ol>
+            </div>
+            <figure class="guide-image">
+              <img src="./assets/photos/lock-bell.png" alt="悦成小阁门锁门铃位置实拍" />
+              <figcaption>门铃位置实拍</figcaption>
+            </figure>
+          </div>
+
+          <div class="guide-panel" data-panel="parking">
+            <div class="guide-text">
+              <span class="step-label">02 / PARKING</span>
+              <h3>进入停车场后，停入右手边白色划线车位。</h3>
+              <ol>
+                <li>驶入停车场，注意现场道闸与车位线。</li>
+                <li>优先选择右手边白色划线车位。</li>
+                <li>停好后保留车牌信息，必要时发给管家。</li>
+              </ol>
+            </div>
+            <figure class="guide-image">
+              <img src="./assets/photos/parking.png" alt="停车场右手边白色划线车位实拍" />
+              <figcaption>停车位置示意实拍</figcaption>
+            </figure>
+          </div>
+
+          <div class="guide-panel" data-panel="power">
+            <div class="guide-text">
+              <span class="step-label">03 / POWER</span>
+              <h3>入住后，将房卡插入墙上取电卡槽。</h3>
+              <ol>
+                <li>在电灯开关旁找到取电卡槽。</li>
+                <li>插入房卡后，房间电源恢复。</li>
+                <li>离开时记得带走随身物品，退房时再归还房卡。</li>
+              </ol>
+            </div>
+            <figure class="guide-image">
+              <img src="./assets/photos/power-card.png" alt="房卡取电卡槽实拍" />
+              <figcaption>房卡取电位置实拍</figcaption>
+            </figure>
+          </div>
+
+          <div class="guide-panel" data-panel="checkout">
+            <div class="guide-text">
+              <span class="step-label">04 / CHECKOUT</span>
+              <h3>一般中午 12 点前退房。</h3>
+              <ol>
+                <li>离开前检查随身物品是否带齐。</li>
+                <li>关好门窗和空调。</li>
+                <li>房卡放楼下小圆桌，并通知管家。</li>
+              </ol>
+            </div>
+            <div class="checkout-card">
+              <img src="./assets/icons/check.svg" alt="" aria-hidden="true" />
+              <strong>退房清单</strong>
+              <span>物品 / 门窗 / 空调 / 房卡 / 管家消息</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite">已复制</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
