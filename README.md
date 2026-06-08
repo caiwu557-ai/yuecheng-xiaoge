@@ -14,6 +14,7 @@
 - `assets/photos/rooms/facade-beautified-close.png`、`facade-beautified-street.png`：门面段使用的美化后实拍
 - `assets/photos/rooms/`：房间、浴室、书桌、投影、茶具和门面实拍素材
 - `assets/photos/lock-bell.png`、`parking.png`、`power-card.png`：入住说明配图
+- `assets/optimized/`：网页实际加载的压缩版 WebP 图片，原图保留在 `assets/photos/`
 - `assets/generated/route-illustration.png`：古城路线氛围底图，不作为真实地图
 
 ## GitHub Pages
