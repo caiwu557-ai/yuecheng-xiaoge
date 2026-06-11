@@ -6,6 +6,7 @@ const roomSlides = Array.from(document.querySelectorAll("[data-room-slide]"));
 const roomDotsWrap = document.querySelector(".room-dots");
 const roomPrev = document.querySelector("[data-room-prev]");
 const roomNext = document.querySelector("[data-room-next]");
+const roomCarousel = document.querySelector("[data-room-carousel]");
 const toast = document.querySelector(".toast");
 const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -47,16 +48,15 @@ if (roomSlides.length && roomDotsWrap) {
     const dot = document.createElement("button");
     dot.type = "button";
     dot.className = "room-dot";
-    dot.setAttribute("aria-label", `查看房间主题 ${index + 1}`);
+    dot.setAttribute("aria-label", `查看楼层 ${index + 1}`);
     dot.addEventListener("click", () => {
-      showRoomSlide(index);
-      restartRoomTimer();
+      showRoomSlide(index, true);
     });
     roomDotsWrap.appendChild(dot);
     return dot;
   });
 
-  const showRoomSlide = (index) => {
+  const showRoomSlide = (index, alignTop = false) => {
     activeRoomSlide = (index + roomSlides.length) % roomSlides.length;
     roomSlides.forEach((slide, slideIndex) => {
       slide.classList.toggle("active", slideIndex === activeRoomSlide);
@@ -65,25 +65,22 @@ if (roomSlides.length && roomDotsWrap) {
       dot.classList.toggle("active", dotIndex === activeRoomSlide);
       dot.setAttribute("aria-current", dotIndex === activeRoomSlide ? "true" : "false");
     });
+    if (alignTop && roomCarousel) {
+      window.requestAnimationFrame(() => {
+        roomCarousel.scrollIntoView({ block: "start", behavior: "smooth" });
+      });
+    }
   };
 
   const nextRoomSlide = () => showRoomSlide(activeRoomSlide + 1);
   const prevRoomSlide = () => showRoomSlide(activeRoomSlide - 1);
 
-  let roomTimer = window.setInterval(nextRoomSlide, 4800);
-  const restartRoomTimer = () => {
-    window.clearInterval(roomTimer);
-    roomTimer = window.setInterval(nextRoomSlide, 4800);
-  };
-
   roomNext?.addEventListener("click", () => {
-    nextRoomSlide();
-    restartRoomTimer();
+    showRoomSlide(activeRoomSlide + 1, true);
   });
 
   roomPrev?.addEventListener("click", () => {
-    prevRoomSlide();
-    restartRoomTimer();
+    showRoomSlide(activeRoomSlide - 1, true);
   });
 
   showRoomSlide(activeRoomSlide);
